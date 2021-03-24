@@ -1,0 +1,12 @@
+12:42:14 **** Incremental Build of configuration Debug for project BluePillBlinky ****
+make all 
+arm-none-eabi-size   BluePillBlinky.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6932	    112	   1584	   8628	   21b4	BluePillBlinky.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objcopy.exe -O ihex "BluePillBlinky.elf" "BluePillBlinky.hex"
+ 
+
+12:42:14 Build Finished. 0 errors, 0 warnings. (took 478ms)
+

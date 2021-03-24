@@ -1,0 +1,7 @@
+22:06:46 **** Clean-only build of configuration Debug for project ESP32_STM32 ****
+make -j8 clean 
+rm -rf *
+ 
+
+22:06:47 Build Finished. 0 errors, 0 warnings. (took 151ms)
+

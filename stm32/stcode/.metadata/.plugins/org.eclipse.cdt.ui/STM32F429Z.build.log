@@ -1,0 +1,7 @@
+22:09:51 **** Clean-only build of configuration Debug for project STM32F429Z ****
+make -j8 clean 
+rm -rf *
+ 
+
+22:09:51 Build Finished. 0 errors, 0 warnings. (took 138ms)
+

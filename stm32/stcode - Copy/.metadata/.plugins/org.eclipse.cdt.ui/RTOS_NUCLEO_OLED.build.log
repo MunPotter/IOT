@@ -1,0 +1,10 @@
+17:51:28 **** Incremental Build of configuration Debug for project RTOS_NUCLEO_OLED ****
+make -j8 all 
+arm-none-eabi-size   RTOS_NUCLEO_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27268	    132	   6708	  34108	   853c	RTOS_NUCLEO_OLED.elf
+Finished building: default.size.stdout
+ 
+
+17:51:29 Build Finished. 0 errors, 0 warnings. (took 477ms)
+

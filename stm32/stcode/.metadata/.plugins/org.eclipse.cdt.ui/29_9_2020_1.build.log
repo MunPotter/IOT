@@ -1,0 +1,7 @@
+22:06:33 **** Clean-only build of configuration Debug for project 29_9_2020_1 ****
+make -j8 clean 
+rm -rf *
+ 
+
+22:06:33 Build Finished. 0 errors, 0 warnings. (took 229ms)
+

@@ -1,0 +1,42 @@
+13:20:48 **** Incremental Build of configuration Debug for project 29_9_2020_1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:245:3: warning: value computed is not used [-Wunused-value]
+   *ptr++;
+   ^~~~~~
+arm-none-eabi-gcc -o "29_9_2020_1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Mun\Desktop\stm32\29_9_2020\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="29_9_2020_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 29_9_2020_1.elf
+ 
+arm-none-eabi-objdump -h -S  29_9_2020_1.elf  > "29_9_2020_1.list"
+arm-none-eabi-objcopy  -O binary  29_9_2020_1.elf  "29_9_2020_1.bin"
+arm-none-eabi-size   29_9_2020_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5808	     20	   1636	   7464	   1d28	29_9_2020_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 29_9_2020_1.bin
+Finished building: 29_9_2020_1.list
+ 
+ 
+14:00:34 **** Incremental Build of configuration Debug for project 29_9_2020_1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function '_write':
+../Core/Src/main.c:244:3: warning: value computed is not used [-Wunused-value]
+   *ptr++;
+   ^~~~~~
+arm-none-eabi-gcc -o "29_9_2020_1.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Mun\Desktop\stm32\29_9_2020\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="29_9_2020_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 29_9_2020_1.elf
+ 
+arm-none-eabi-objdump -h -S  29_9_2020_1.elf  > "29_9_2020_1.list"
+arm-none-eabi-objcopy  -O binary  29_9_2020_1.elf  "29_9_2020_1.bin"
+arm-none-eabi-size   29_9_2020_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5732	     20	   1636	   7388	   1cdc	29_9_2020_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: 29_9_2020_1.bin
+Finished building: 29_9_2020_1.list
+ 
+ 

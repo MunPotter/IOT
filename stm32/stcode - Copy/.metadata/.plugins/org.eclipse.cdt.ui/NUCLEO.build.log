@@ -1,0 +1,10 @@
+14:41:33 **** Incremental Build of configuration Debug for project NUCLEO ****
+make -j8 all 
+arm-none-eabi-size   NUCLEO.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9416	    120	   1584	  11120	   2b70	NUCLEO.elf
+Finished building: default.size.stdout
+ 
+
+14:41:33 Build Finished. 0 errors, 0 warnings. (took 246ms)
+

@@ -1,0 +1,7 @@
+22:09:24 **** Clean-only build of configuration Debug for project NUCLEO ****
+make -j8 clean 
+rm -rf *
+ 
+
+22:09:24 Build Finished. 0 errors, 0 warnings. (took 142ms)
+

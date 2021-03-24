@@ -1,0 +1,10 @@
+13:30:28 **** Incremental Build of configuration Debug for project DISCOVERY_CPLUS_PLUS ****
+make -j8 all 
+arm-none-eabi-size   DISCOVERY_CPLUS_PLUS.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 203864	    796	  42752	 247412	  3c674	DISCOVERY_CPLUS_PLUS.elf
+Finished building: default.size.stdout
+ 
+
+13:30:28 Build Finished. 0 errors, 0 warnings. (took 345ms)
+

@@ -1,0 +1,20 @@
+15:39:41 **** Incremental Build of configuration Debug for project Finger_print_f103 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Finger_print_f103.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Mun\Desktop\stm32\stcode\Finger_print_f103\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Finger_print_f103.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Finger_print_f103.elf
+ 
+arm-none-eabi-objdump -h -S  Finger_print_f103.elf  > "Finger_print_f103.list"
+arm-none-eabi-objcopy  -O binary  Finger_print_f103.elf  "Finger_print_f103.bin"
+arm-none-eabi-size   Finger_print_f103.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11676	     24	   2752	  14452	   3874	Finger_print_f103.elf
+Finished building: default.size.stdout
+ 
+Finished building: Finger_print_f103.bin
+ 
+Finished building: Finger_print_f103.list
+ 
+
+15:39:43 Build Finished. 0 errors, 0 warnings. (took 1s.809ms)
+

@@ -1,0 +1,20 @@
+12:37:35 **** Incremental Build of configuration Debug for project SPI_MASTER ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SPI_MASTER.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Mun\Desktop\stm32\stcode\SPI_MASTER\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPI_MASTER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPI_MASTER.elf
+ 
+arm-none-eabi-objdump -h -S  SPI_MASTER.elf  > "SPI_MASTER.list"
+arm-none-eabi-objcopy  -O binary  SPI_MASTER.elf  "SPI_MASTER.bin"
+arm-none-eabi-size   SPI_MASTER.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25612	    140	  20652	  46404	   b544	SPI_MASTER.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPI_MASTER.bin
+ 
+Finished building: SPI_MASTER.list
+ 
+
+12:37:37 Build Finished. 0 errors, 0 warnings. (took 2s.61ms)
+
