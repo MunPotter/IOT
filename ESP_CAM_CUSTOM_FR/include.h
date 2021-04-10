@@ -1,0 +1,12 @@
+//#include <IOXhop_FirebaseESP32.h>
+#include <ESPmDNS.h>
+#include <WiFi.h>
+#include "soc/soc.h"
+#include "soc/rtc_cntl_reg.h"
+#include "esp_camera.h"
+#include "img_converters.h"
+#include "fb_gfx.h"
+#include "fd_forward.h"
+#include "fr_forward.h"
+#include "esp_http_server.h"
+#include "esp_timer.h"
